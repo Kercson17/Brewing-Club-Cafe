@@ -6,10 +6,10 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1495474472207-464a4ad545cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1507133750070-4ed01eb5822b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80"
 ];
 
 export default function Gallery() {

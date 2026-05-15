@@ -13,20 +13,24 @@ export default function Hero() {
   const yHero = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   useGSAP(() => {
-    gsap.from(".hero-content > *", {
-      y: 30,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power3.out",
-    });
+    const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+    tl.fromTo(".hero-video-container", 
+      { opacity: 0, scale: 1.1 }, 
+      { opacity: 1, scale: 1, duration: 2 }
+    )
+    .fromTo(".hero-content > *", 
+      { y: 40, opacity: 0 }, 
+      { y: 0, opacity: 1, duration: 1.2, stagger: 0.15 },
+      0.4 // Start text animation shortly after video starts revealing
+    );
   }, { scope: containerRef });
 
   return (
     <section id="home" ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-secondary">
       <motion.div 
         style={{ y: yHero }}
-        className="absolute inset-0 w-full h-full"
+        className="absolute inset-0 w-full h-full hero-video-container"
       >
         {/* Advanced Cinematic Overlay: Warm gradient for premium feel and text contrast */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-secondary/40 to-secondary/80 z-10 mix-blend-multiply"></div>
