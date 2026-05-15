@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
+import { cn } from "@/lib/utils";
 
 const montserrat = Montserrat({ 
   subsets: ["latin"],
@@ -16,10 +15,6 @@ const cormorant = Cormorant_Garamond({
   weight: ["300", "400", "600", "700"],
   style: ["normal", "italic"]
 });
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
 
 export const metadata: Metadata = {
   title: "Brewing Club Co. | Premium Philippine Coffee in Talisay, Cebu",
