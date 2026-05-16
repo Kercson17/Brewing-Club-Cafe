@@ -21,8 +21,8 @@ export default function MapSection() {
     });
   }, { scope: containerRef });
 
-  // Brewing Club Co. exact location (South Coast Center, Talisay)
-  const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.86241372554!2d123.83445897584102!3d10.272733468249853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99da979f4974f%3A0x86734d8d1ueuA5mm!2sSouth%20Coast%20Center!5e0!3m2!1sen!2sph!4v1715760000000!5m2!1sen!2sph";
+  // Brewing Club Co. by Netibu Coffee exact location
+  const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3197825023955!2d123.83416567584065!3d10.251849268892121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a97900765bf1f5%3A0x39124e26279489b9!2sBrewing%20Club%20Co.%20by%20Netibu%20Coffee!5e0!3m2!1sen!2sph!4v1715760000000!5m2!1sen!2sph";
 
   return (
     <section ref={containerRef} className="relative py-20 bg-accent overflow-hidden">
@@ -34,7 +34,7 @@ export default function MapSection() {
             <h4 className="text-primary tracking-[0.2em] uppercase text-[10px] mb-2 font-semibold">Location</h4>
             <h2 className="text-3xl md:text-4xl font-serif text-secondary mb-6">Visit the Club</h2>
             <p className="text-gray-600 mb-6 leading-relaxed font-light text-base">
-              Find us at the heart of Talisay City. Our space at South Coast Center is designed for coffee lovers to connect and experience the best of Philippine specialty coffee.
+              Experience the best of Philippine specialty coffee. Visit us at our Talisay location and enjoy a cup crafted with passion and precision.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -44,14 +44,14 @@ export default function MapSection() {
                 </div>
                 <div>
                   <h5 className="font-semibold text-[11px] uppercase tracking-wider text-secondary">Address</h5>
-                  <p className="text-gray-500 font-light text-sm">South Coast Center, Linao, Talisay City, Cebu</p>
+                  <p className="text-gray-500 font-light text-sm">Brewing Club Co. by Netibu Coffee, Talisay City, Cebu</p>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-wrap gap-3">
               <a 
-                href="https://www.google.com/maps/dir/?api=1&destination=South+Coast+Center+Talisay+Cebu" 
+                href="https://www.google.com/maps/dir/?api=1&destination=Brewing+Club+Co.+by+Netibu+Coffee" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-secondary text-white px-5 py-2.5 rounded-full text-[10px] font-semibold tracking-widest uppercase hover:bg-primary transition-colors duration-300 shadow-md"
