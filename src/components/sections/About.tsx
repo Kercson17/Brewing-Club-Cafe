@@ -37,7 +37,7 @@ export default function About() {
     <section id="about" ref={containerRef} className="py-16 md:py-32 bg-accent px-6 lg:px-12 max-w-[1600px] mx-auto overflow-hidden">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
         <div className="lg:w-1/2 relative about-image-container w-full">
-          <div className="relative z-10 shadow-xl w-full h-[400px] md:h-[600px]">
+          <div className="relative z-10 w-full h-[400px] md:h-[600px] overflow-hidden">
             <Image 
               src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
               alt="Barista brewing coffee" 

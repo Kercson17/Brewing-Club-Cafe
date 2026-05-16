@@ -54,8 +54,8 @@ export default function Featured() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
-            <h3 className="text-2xl font-serif mb-2">{coffee.name}</h3>
-            <div className="flex justify-between items-center text-sm">
+            <h3 className="text-2xl font-serif mb-2 text-center">{coffee.name}</h3>
+            <div className="flex flex-col items-center gap-1 text-sm text-center">
               <span className="text-gray-500">{coffee.notes}</span>
               <span className="text-primary uppercase tracking-wider text-xs font-semibold">{coffee.roast}</span>
             </div>
