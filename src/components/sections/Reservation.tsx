@@ -64,11 +64,27 @@ export default function Reservation() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="flex flex-col gap-2">
                 <label className="text-xs tracking-widest uppercase text-gray-500 font-semibold">First Name</label>
-                <input name="firstName" required type="text" className="border-b border-gray-300 py-3 bg-transparent focus:outline-none focus:border-primary transition-colors" placeholder="John" />
+                <input 
+                  name="user_f_name" 
+                  required 
+                  type="text" 
+                  autoComplete="off"
+                  spellCheck="false"
+                  data-lpignore="true"
+                  className="border-b border-gray-300 py-3 bg-transparent focus:outline-none focus:border-primary transition-colors text-secondary shadow-none appearance-none" 
+                />
               </div>
               <div className="flex flex-col gap-2">
                 <label className="text-xs tracking-widest uppercase text-gray-500 font-semibold">Last Name</label>
-                <input name="lastName" required type="text" className="border-b border-gray-300 py-3 bg-transparent focus:outline-none focus:border-primary transition-colors" placeholder="Doe" />
+                <input 
+                  name="user_l_name" 
+                  required 
+                  type="text" 
+                  autoComplete="off"
+                  spellCheck="false"
+                  data-lpignore="true"
+                  className="border-b border-gray-300 py-3 bg-transparent focus:outline-none focus:border-primary transition-colors text-secondary shadow-none appearance-none" 
+                />
               </div>
             </div>
             

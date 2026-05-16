@@ -28,7 +28,7 @@ export default function Featured() {
 
   return (
     <section id="featured" ref={containerRef} className="py-24 md:py-32 bg-accent px-6 lg:px-12 max-w-[1600px] mx-auto">
-      <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-6">
+      <div className="flex flex-col items-center text-center mb-16 md:mb-24 gap-6">
         <div>
           <h4 className="text-primary tracking-[0.2em] uppercase text-sm mb-4 font-semibold">Our Roasts</h4>
           <h2 className="text-4xl md:text-6xl font-serif text-secondary">Featured Coffees</h2>
