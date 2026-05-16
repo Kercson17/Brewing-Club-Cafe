@@ -3,7 +3,6 @@
 import { navLinks } from '@/constants/navigation';
 import { Instagram, Facebook, MapPin, Phone, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 export default function Footer() {
   return (
